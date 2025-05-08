@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Compras</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body onload="ReloadPage()">
+  <header>
+    <div class="flex align content-center">
+      <img src="assets/logo.svg" alt="logo" class="logo">
+    </div>
+  </header>
+  <main>
+    <div class="text-header">
+      <div>
+        <a href="#" class="link flex-row align backButton">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="#ca3884" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-arrow-left-icon lucide-arrow-left">
+            <path d="m12 19-7-7 7-7" />
+            <path d="M19 12H5" />
+          </svg>
+          Voltar
+        </a>
+      </div>
+      <h1 class="title">Compras da semana</h1>
+    </div>
+    <form class="container-input">
+      <input type="text" class="input" placeholder="Adicione um novo item" required>
+      <input type="submit" value="Adicionar item" class="button">
+    </form>
+    <div class="list">
+      <ul class="ulList">
+      </ul>
+    </div>
+    <div class="alert flex-row align">
+      <img src="assets/alert.svg" alt="alert">
+      <span class="label">O item foi removido da lista</span>
+      <img src="assets/delete-small.svg" alt="delete" class="delete-icon">
+    </div>
+  </main>
+</body>
+<script src="script/script.js"></script>
+
+</html>
